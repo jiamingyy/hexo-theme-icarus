@@ -23,11 +23,17 @@ $custom-colors ?= {
 $navbar-item-active-color ?= $primary
 $footer-background-color ?= $scheme-main
 
-$gap ?= 64px
-$tablet ?= 769px
-$desktop ?= 1088px
-$widescreen ?= 1280px
-$fullhd ?= 1472px
+// $gap ?= 64px
+// $tablet ?= 769px
+// $desktop ?= 1088px
+// $widescreen ?= 1280px
+// $fullhd ?= 1472px
+
+$gap ?= 5px
+$tablet ?= 900px
+$desktop ?= 1400px
+$widescreen ?= 1650px
+$fullhd ?= 1850px
 
 $shadow ?= 0 4px 10px rgba(0, 0, 0, 0.05)
 
@@ -98,3 +104,7 @@ html
 
     ::-webkit-scrollbar-thumb:hover
         background: rgba(0,0,0,0.24)
+.card
+    ::-webkit-scrollbar
+        width: 5px
+        height: 0px

@@ -32,9 +32,11 @@ class Navbar extends Component {
         if (logo) {
             if (logo.text) {
                 navbarLogo = logo.text;
-            } else {
-                navbarLogo = <img src={logoUrl} alt={siteTitle} height="100" />;
             }
+            navbarLogo=siteTitle
+            // else {
+            //     navbarLogo = <img src={logoUrl} alt={siteTitle} height="100" />;
+            // }
         } else {
             navbarLogo = siteTitle;
         }
@@ -43,7 +45,8 @@ class Navbar extends Component {
             <div class="container navbar-container">
                 <div class="navbar-brand justify-content-center">
                     <a class="navbar-item navbar-logo" href={siteUrl}>
-                        {navbarLogo}
+                        <div class='fa fa-terminal'></div>
+                        <div class='navbar-logo-text'>{navbarLogo}</div>
                     </a>
                 </div>
                 <div class="navbar-menu">
