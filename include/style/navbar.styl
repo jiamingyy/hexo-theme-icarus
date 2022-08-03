@@ -59,6 +59,12 @@ $navbar-item-margin-h ?= 0
     .navbar-logo-text
         margin-left: 1rem
 
-@media screen and (min-width: $desktop)
+@media screen and (min-width: $widescreen)
     .navbar > .container .navbar-menu, .container > .navbar .navbar-menu
         margin-right: 0rem
+
+
+.navbar-main
+    ::-webkit-scrollbar
+        width: 5px
+        height: 0px
