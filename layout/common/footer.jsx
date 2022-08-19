@@ -18,6 +18,9 @@ class Footer extends Component {
 
         let footerLogo = '';
         let logoText = '';
+        
+
+
         // window.fetch('https://v1.hitokoto.cn')
         //     .then(function (res){
         //     return res.json();
@@ -45,6 +48,8 @@ class Footer extends Component {
 
 
         return <footer class="footer">
+            <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
             <div class="container">
                 <div class="level">
                     <div class="level-start">
